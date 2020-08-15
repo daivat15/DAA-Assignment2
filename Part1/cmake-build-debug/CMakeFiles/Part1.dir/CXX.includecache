@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Personal/Studies/BITS/Semester 5/CS F214/Assignment 2/Part1/Node.h
+
+C:/Personal/Studies/BITS/Semester 5/CS F214/Assignment 2/Part1/main.cpp
+iostream
+-
+stack
+-
+string.h
+-
+ctime
+-
+Node.h
+C:/Personal/Studies/BITS/Semester 5/CS F214/Assignment 2/Part1/Node.h
+

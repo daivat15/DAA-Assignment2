@@ -1,0 +1,109 @@
+\hypertarget{main_8cpp}{}\section{Part1/main.cpp File Reference}
+\label{main_8cpp}\index{Part1/main.\+cpp@{Part1/main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Node.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_ac6df39a0553d51f4849fa87568860435}{convert\+To\+Postfix}} (const char original\mbox{[}$\,$\mbox{]}, char postfix\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_node}{Node}} $\ast$ \mbox{\hyperlink{main_8cpp_ac609555b88afe4a0cbfdc552ce9e9249}{generate\+Parse\+Tree}} (char postfix\mbox{[}$\,$\mbox{]})
+\item 
+bool \mbox{\hyperlink{main_8cpp_ae863e6558360feffc9b55e5894b2c243}{traverse\+Tree}} (\mbox{\hyperlink{class_node}{Node}} $\ast$head, char validity\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{main_8cpp_a5b0d993a625ac91520b7d94e6f5a238d}{bracket\+Remover}} (char original\mbox{[}$\,$\mbox{]}, char brackets\+Removed\mbox{[}100\mbox{]})
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a8482817f5d987fc9ebb0bfd0a0b4d391}{bracket\+Remover}} (char original\mbox{[}$\,$\mbox{]}, char brackets\+Removed\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_af54c14f03e1e8bfb0ba03c0c07181fb8}{m\+Count}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a5b0d993a625ac91520b7d94e6f5a238d}\label{main_8cpp_a5b0d993a625ac91520b7d94e6f5a238d}} 
+\index{main.\+cpp@{main.\+cpp}!bracket\+Remover@{bracket\+Remover}}
+\index{bracket\+Remover@{bracket\+Remover}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{bracket\+Remover()}{bracketRemover()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void bracket\+Remover (\begin{DoxyParamCaption}\item[{char}]{original\mbox{[}$\,$\mbox{]},  }\item[{char}]{brackets\+Removed\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a8482817f5d987fc9ebb0bfd0a0b4d391}\label{main_8cpp_a8482817f5d987fc9ebb0bfd0a0b4d391}} 
+\index{main.\+cpp@{main.\+cpp}!bracket\+Remover@{bracket\+Remover}}
+\index{bracket\+Remover@{bracket\+Remover}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{bracket\+Remover()}{bracketRemover()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void bracket\+Remover (\begin{DoxyParamCaption}\item[{char}]{original\mbox{[}$\,$\mbox{]},  }\item[{char}]{brackets\+Removed\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Function that removes brackets \textquotesingle{}(\textquotesingle{}, \textquotesingle{})\textquotesingle{} from a given character array 
+\begin{DoxyParams}{Parameters}
+{\em original} & the original character array \\
+\hline
+{\em brackets\+Removed} & stores the character array with brackets removed here \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ac6df39a0553d51f4849fa87568860435}\label{main_8cpp_ac6df39a0553d51f4849fa87568860435}} 
+\index{main.\+cpp@{main.\+cpp}!convert\+To\+Postfix@{convert\+To\+Postfix}}
+\index{convert\+To\+Postfix@{convert\+To\+Postfix}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{convert\+To\+Postfix()}{convertToPostfix()}}
+{\footnotesize\ttfamily void convert\+To\+Postfix (\begin{DoxyParamCaption}\item[{const char}]{original\mbox{[}$\,$\mbox{]},  }\item[{char}]{postfix\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Function to convert the original expression to a postfix expression 
+\begin{DoxyParams}{Parameters}
+{\em original} & the original expression \\
+\hline
+{\em postfix} & array to store the postfox expression \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ac609555b88afe4a0cbfdc552ce9e9249}\label{main_8cpp_ac609555b88afe4a0cbfdc552ce9e9249}} 
+\index{main.\+cpp@{main.\+cpp}!generate\+Parse\+Tree@{generate\+Parse\+Tree}}
+\index{generate\+Parse\+Tree@{generate\+Parse\+Tree}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+Parse\+Tree()}{generateParseTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}} $\ast$ generate\+Parse\+Tree (\begin{DoxyParamCaption}\item[{char}]{postfix\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Function that generates a parse tree from a postfix expression 
+\begin{DoxyParams}{Parameters}
+{\em postfix} & the postfix expression whose parse tree is to be generated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pointer to the root of the parse tree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Boiler plate code \begin{DoxyReturn}{Returns}
+default value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae863e6558360feffc9b55e5894b2c243}\label{main_8cpp_ae863e6558360feffc9b55e5894b2c243}} 
+\index{main.\+cpp@{main.\+cpp}!traverse\+Tree@{traverse\+Tree}}
+\index{traverse\+Tree@{traverse\+Tree}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{traverse\+Tree()}{traverseTree()}}
+{\footnotesize\ttfamily bool traverse\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{head,  }\item[{char}]{validity\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Function that traverses the given parse tree inorder while simultaneously checking if the parse tree is valid. It checks that each corresponding operator node has the appropriate amount of child nodes. 
+\begin{DoxyParams}{Parameters}
+{\em head} & pointer to the root of the parse tree \\
+\hline
+{\em validity} & array to store traversed nodes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parse tree has appropriate child nodes, false if it does not (this makes it invalid) 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_af54c14f03e1e8bfb0ba03c0c07181fb8}\label{main_8cpp_af54c14f03e1e8bfb0ba03c0c07181fb8}} 
+\index{main.\+cpp@{main.\+cpp}!m\+Count@{m\+Count}}
+\index{m\+Count@{m\+Count}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{m\+Count}{mCount}}
+{\footnotesize\ttfamily int m\+Count}
+

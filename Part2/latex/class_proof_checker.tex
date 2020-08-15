@@ -1,0 +1,55 @@
+\hypertarget{class_proof_checker}{}\section{Proof\+Checker Class Reference}
+\label{class_proof_checker}\index{Proof\+Checker@{Proof\+Checker}}
+
+
+{\ttfamily \#include $<$Proof\+Checker.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_proof_checker_a056d59c987ebf513911bd7ae88b1a75a}{checker}} (int n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_proof_checker_a056d59c987ebf513911bd7ae88b1a75a}\label{class_proof_checker_a056d59c987ebf513911bd7ae88b1a75a}} 
+\index{Proof\+Checker@{Proof\+Checker}!checker@{checker}}
+\index{checker@{checker}!Proof\+Checker@{Proof\+Checker}}
+\subsubsection{\texorpdfstring{checker()}{checker()}}
+{\footnotesize\ttfamily static int Proof\+Checker\+::checker (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Core function 
+\begin{DoxyParams}{Parameters}
+{\em n} & The number of lines in proof. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value if the proof is valid or not. 
+\end{DoxyReturn}
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+This will check if the statement entered is a Premise. If it is a premise then then it is stored in temp which is then pushed in box
+
+This will check if the statement is a A\+ND introduction. If it is then i1 and i2 will be the two sub statements from which and is derived. We make temp2 from the substatements and then compare it with the given statement.\+If both are equal we can continue further and analyse other statements otherwise directly make flag 0
+
+This will check if the statement is A\+ND elimination 1. temp1 will have the given statement. If it is then i1 will be the statement from which this given statement is derived. We then push the statement corresponding to i1 in stack s. Then temp2 is found out which is obtained from $^\wedge$e1 from the i1 statement.\+If both are equal we can continue further and analyse other statements otherwise directly make flag 0
+
+This will check if the statement is A\+ND elimination 2. temp1 will have the given statement. i1 will be the statement from which this given statement is derived. We then push the statement corresonding to i1 in stack s. Then temp2 is found out which is obtained from $^\wedge$e2 from the i1 statement.\+If both are equal we can continue further and analyse other statements otherwise directly make flag 0
+
+This will check if the statement is OR introduction 1. permanent will have the given statement. i1 will be the statement from which this given statement is derived. temp1 will have the statement from box which corresponds to i1. We then push the permanent statement in stack s. Then temp2 is found out which is the part from which permanent is obtined by v i1. If both temp1 and temp2 are equal we can continue further and analyse other statements otherwise directly make flag 0
+
+This will check if the statement is OR introduction 2. permanent will have the given statement. i1 will be the statement from which this given statement is derived. temp1 will have the statement from box which corresponds to i1. We then push the permanent statement in stack s. Then temp2 is found out which is the part from which permanent is obtained by v i1. If both temp1 and temp2 are equal we can continue further and analyse other statements otherwise directly make flag 0
+
+This will check if the statement is implication elimination. temp1 will have the given statement. i1 and i2 are the statement from which this given statement is derived. If i1 has implication symbol then interchange i1 and i2. i2 should have implication symbol. Also implication symbol used is \char`\"{}-\/$>$\char`\"{} temp2 will form an implication statement. temp3 will be statement corresponding to i2. If both temp2 and temp3 are equal we can continue further and analyse other statements otherwise directly make flag 0
+
+This will check if the statement follows MT rule or not. temp1 will have the given statement. i1 and i2 are the statement from which this given statement is derived. If i1 has implication symbol then interchange i1 and i2. i2 should have implication symbol. Also implication symbol used is \char`\"{}-\/$>$\char`\"{} temp2 will form an implication statement. temp3 will be statement corresponding to i2. If both temp2 and temp3 are equal we can continue further and analyse other statements otherwise directly make flag 0 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Part2/\mbox{\hyperlink{_proof_checker_8h}{Proof\+Checker.\+h}}\end{DoxyCompactItemize}
